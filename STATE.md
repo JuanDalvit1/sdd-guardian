@@ -3,8 +3,8 @@
 ## Current status
 
 - Active branch of work: initial repository implementation
-- Production state: local repo scaffolded, visuals generated, install path implemented
-- Known blockers: GitHub repo settings such as description, topics, social preview upload, and pinning still depend on remote configuration
+- Production state: public repo published, pinned, versioned, and releasable through downloadable ZIP assets
+- Known blockers: social preview image still needs to be uploaded manually in GitHub repository settings if you want the card outside the repo page to match the packaged asset exactly
 
 ## Risks
 
@@ -23,6 +23,7 @@
 - 2026-04-02: initial public repo structure created
 - 2026-04-02: global install and sync scripts added
 - 2026-04-02: skill templates, references, visuals, and validation workflow added
+- 2026-04-03: first public release `v0.1.0` created with downloadable full and skill-only ZIP assets
 
 ## Next actions
 
@@ -30,4 +31,3 @@
 - Upload `assets/social-preview.png` in repository settings
 - Pin the repo on the GitHub profile
 - Iterate on drift rules after the first real project adoptions
-

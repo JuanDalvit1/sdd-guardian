@@ -18,6 +18,7 @@
 - `bootstrap/`: global install and sync scripts
 - `codex/AGENTS.snippet.md`: persistent instruction block
 - `docs/`: public docs plus internal project architecture and ops notes
+- `CHANGELOG.md`: public release history
 - `assets/`: social preview and README visuals
 
 ## Integrations

@@ -8,6 +8,7 @@
   <a href="./docs/installation.md"><img alt="Install" src="https://img.shields.io/badge/install-global%20codex-111827?style=for-the-badge"></a>
   <a href="./docs/doc-pack.md"><img alt="Docs Pack" src="https://img.shields.io/badge/doc%20pack-PROJECT%20STATE%20ADR-0f766e?style=for-the-badge"></a>
   <a href="https://github.com/JuanDalvit1/sdd-guardian/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/JuanDalvit1/sdd-guardian?display_name=tag&style=for-the-badge"></a>
+  <a href="https://github.com/JuanDalvit1/sdd-guardian/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/JuanDalvit1/sdd-guardian/total?style=for-the-badge"></a>
   <a href="./LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-1d4ed8?style=for-the-badge"></a>
 </p>
 
@@ -124,6 +125,8 @@ The release also ships a `sdd-guardian-skill-<version>.zip` asset for people who
 
 Detailed guide: [installation.md](./docs/installation.md)
 
+Release history: [CHANGELOG.md](./CHANGELOG.md)
+
 ## Recommended persistent instruction
 
 The repo ships a short persistent snippet on purpose:
@@ -174,6 +177,7 @@ If you work across multiple PCs, use this repository as the source of truth and 
 ## References
 
 - [Installation guide](./docs/installation.md)
+- [Changelog](./CHANGELOG.md)
 - [Persistent instructions](./docs/persistent-instructions.md)
 - [Adoption playbook](./docs/adoption-playbook.md)
 - [Why agent-legible docs matter](./docs/why-agent-legible-docs.md)
