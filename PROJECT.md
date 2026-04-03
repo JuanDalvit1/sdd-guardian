@@ -30,6 +30,7 @@
 
 - Install globally: `powershell -ExecutionPolicy Bypass -File .\\bootstrap\\install.ps1`
 - Sync after pull: `powershell -ExecutionPolicy Bypass -File .\\bootstrap\\sync.ps1`
+- Package release: `powershell -ExecutionPolicy Bypass -File .\\bootstrap\\package-release.ps1 -Version v0.1.0`
 - Scan repo: `python .\\skill\\sdd-guardian\\scripts\\scan_project.py --root . --pretty`
 - Check doc drift: `python .\\skill\\sdd-guardian\\scripts\\check_doc_drift.py --root . --changed README.md --pretty`
 
@@ -39,4 +40,3 @@
 - Templates must remain generic enough for many stacks
 - Install path must be idempotent and safe inside Codex home
 - The repo should explain the system clearly without turning into a giant manual
-

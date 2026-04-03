@@ -7,6 +7,7 @@
 <p align="center">
   <a href="./docs/installation.md"><img alt="Install" src="https://img.shields.io/badge/install-global%20codex-111827?style=for-the-badge"></a>
   <a href="./docs/doc-pack.md"><img alt="Docs Pack" src="https://img.shields.io/badge/doc%20pack-PROJECT%20STATE%20ADR-0f766e?style=for-the-badge"></a>
+  <a href="https://github.com/JuanDalvit1/sdd-guardian/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/JuanDalvit1/sdd-guardian?display_name=tag&style=for-the-badge"></a>
   <a href="./LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-1d4ed8?style=for-the-badge"></a>
 </p>
 
@@ -105,6 +106,12 @@ See [doc-pack.md](./docs/doc-pack.md) for the contract and update rules.
   <img src="./assets/readme/install-flow.png" alt="Install flow" width="100%" />
 </p>
 
+Fastest path:
+
+1. Download the latest ZIP from [releases/latest](https://github.com/JuanDalvit1/sdd-guardian/releases/latest)
+2. Extract it anywhere
+3. Run `bootstrap\install.ps1`
+
 ```powershell
 git clone https://github.com/JuanDalvit1/sdd-guardian
 cd sdd-guardian
@@ -112,6 +119,8 @@ powershell -ExecutionPolicy Bypass -File .\bootstrap\install.ps1
 ```
 
 This installs the skill into `%USERPROFILE%\.codex\skills\sdd-guardian` and updates `%USERPROFILE%\.codex\AGENTS.md` with a managed persistent instruction block.
+
+The release also ships a `sdd-guardian-skill-<version>.zip` asset for people who only want the skill payload.
 
 Detailed guide: [installation.md](./docs/installation.md)
 
