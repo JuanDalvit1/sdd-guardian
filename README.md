@@ -1,7 +1,7 @@
 # SDD Guardian
 
 <p align="center">
-  <img src="./assets/readme/hero-overview.svg" alt="SDD Guardian overview" width="100%" />
+  <img src="./assets/readme/hero-overview.png" alt="SDD Guardian overview" width="100%" />
 </p>
 
 <p align="center">
@@ -64,7 +64,7 @@ flowchart LR
 ## Before / After
 
 <p align="center">
-  <img src="./assets/readme/before-after.svg" alt="Before and after documentation quality" width="100%" />
+  <img src="./assets/readme/before-after.png" alt="Before and after documentation quality" width="100%" />
 </p>
 
 **Before**
@@ -102,7 +102,7 @@ See [doc-pack.md](./docs/doc-pack.md) for the contract and update rules.
 ## Install globally in Codex
 
 <p align="center">
-  <img src="./assets/readme/install-flow.svg" alt="Install flow" width="100%" />
+  <img src="./assets/readme/install-flow.png" alt="Install flow" width="100%" />
 </p>
 
 ```powershell
