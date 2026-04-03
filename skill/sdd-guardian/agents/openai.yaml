@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDD Guardian"
+  short_description: "Keep project context current for Codex"
+  default_prompt: "Bootstrap or update a project SDD pack so PROJECT.md, STATE.md, docs, ADRs, and README stay aligned with the current system."

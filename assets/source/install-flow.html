@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Install Flow</title>
+  <style>
+    :root {
+      --bg-top: #08111f;
+      --bg-bottom: #12312f;
+      --panel: rgba(10, 20, 33, 0.95);
+      --border: #1c4f7b;
+      --text: #f8fbff;
+      --muted: #bfd4e8;
+      --teal: #168b7c;
+      --cyan: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1280px;
+      height: 720px;
+      font-family: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+      overflow: hidden;
+      padding: 70px;
+    }
+    h1 {
+      margin: 0 0 42px;
+      font-size: 56px;
+      line-height: 1;
+    }
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 54px 1fr 54px 1fr 54px 1fr;
+      gap: 0;
+      align-items: center;
+    }
+    .step {
+      min-height: 370px;
+      border-radius: 30px;
+      border: 3px solid var(--border);
+      background: var(--panel);
+      padding: 28px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .num {
+      width: 56px;
+      height: 56px;
+      border-radius: 20px;
+      background: var(--teal);
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      font-weight: 800;
+    }
+    h2 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.05;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .arrow {
+      display: grid;
+      place-items: center;
+      color: var(--cyan);
+      font-size: 54px;
+      font-weight: 800;
+    }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Install once. Sync everywhere.</h1>
+  <section class="flow">
+    <article class="step">
+      <div class="num">1</div>
+      <h2>Clone repo</h2>
+      <p><code>git clone
+JuanDalvit1/sdd-guardian</code></p>
+    </article>
+    <div class="arrow">→</div>
+    <article class="step">
+      <div class="num">2</div>
+      <h2>Run install</h2>
+      <p><code>bootstrap\install.ps1</code></p>
+      <p>Installs the skill and injects the managed AGENTS block.</p>
+    </article>
+    <div class="arrow">→</div>
+    <article class="step">
+      <div class="num">3</div>
+      <h2>Codex updated</h2>
+      <p><code>%USERPROFILE%\.codex</code></p>
+      <p>Receives the skill folder and the persistent instruction snippet.</p>
+    </article>
+    <div class="arrow">→</div>
+    <article class="step">
+      <div class="num">4</div>
+      <h2>Next PC</h2>
+      <p><code>git pull
+bootstrap\sync.ps1</code></p>
+      <p>Reapply the same global setup without drift.</p>
+    </article>
+  </section>
+</body>
+</html>
+

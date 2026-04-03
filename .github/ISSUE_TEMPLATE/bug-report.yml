@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a bug in the skill, templates, bootstrap path, or docs contract.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Describe the incorrect behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: List the steps, commands, and paths needed to reproduce the bug.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: Describe the expected result.
+    validations:
+      required: true
+

@@ -1,0 +1,59 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f CONTRIBUTING.md
+          test -f CODE_OF_CONDUCT.md
+          test -f SECURITY.md
+          test -f codex/AGENTS.snippet.md
+          test -f bootstrap/install.ps1
+          test -f bootstrap/sync.ps1
+          test -f skill/sdd-guardian/SKILL.md
+
+      - name: Compile scripts
+        run: python -m compileall skill/sdd-guardian/scripts
+
+      - name: Validate skill metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          root = Path("skill/sdd-guardian")
+          skill_md = root / "SKILL.md"
+          if not skill_md.exists():
+              raise SystemExit("SKILL.md missing")
+          text = skill_md.read_text(encoding="utf-8")
+          if not text.startswith("---"):
+              raise SystemExit("SKILL.md missing YAML frontmatter")
+          openai_yaml = root / "agents" / "openai.yaml"
+          if not openai_yaml.exists():
+              raise SystemExit("agents/openai.yaml missing")
+          print("Fallback skill validation passed")
+          PY
+
+      - name: Run project scan
+        run: python skill/sdd-guardian/scripts/scan_project.py --root . --pretty > scan-report.json
+
+      - name: Run doc drift check
+        run: python skill/sdd-guardian/scripts/check_doc_drift.py --root . --changed README.md bootstrap/install.ps1 skill/sdd-guardian/SKILL.md --pretty > drift-report.json

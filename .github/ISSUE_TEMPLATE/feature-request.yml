@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest a new capability for the skill, templates, or adoption workflow.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What friction, gap, or recurring need should this feature solve?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed change
+      description: Describe the desired behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Impact on docs contract
+      description: Explain whether this changes templates, install flow, persistent instructions, or validation rules.
+    validations:
+      required: false
+

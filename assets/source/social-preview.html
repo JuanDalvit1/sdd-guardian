@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SDD Guardian Social Preview</title>
+  <style>
+    :root {
+      --bg-top: #08111f;
+      --bg-bottom: #12312f;
+      --panel: rgba(10, 20, 33, 0.94);
+      --border: #1c4f7b;
+      --text: #f8fbff;
+      --muted: #bfd4e8;
+      --teal: #14b8a6;
+      --cyan: #38bdf8;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+      color: var(--text);
+      width: 1280px;
+      height: 640px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      opacity: 0.18;
+      pointer-events: none;
+    }
+
+    body::before {
+      width: 360px;
+      height: 360px;
+      top: -90px;
+      right: -60px;
+      background: var(--cyan);
+    }
+
+    body::after {
+      width: 340px;
+      height: 340px;
+      left: -150px;
+      bottom: -90px;
+      background: var(--teal);
+    }
+
+    .frame {
+      position: absolute;
+      inset: 60px;
+      background: var(--panel);
+      border: 3px solid var(--border);
+      border-radius: 34px;
+      padding: 34px;
+      display: grid;
+      grid-template-rows: auto auto auto 1fr;
+      gap: 22px;
+    }
+
+    .pill {
+      width: fit-content;
+      padding: 14px 26px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #0f766e, #167d71);
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 66px;
+      line-height: 1.02;
+      max-width: 920px;
+    }
+
+    .deck {
+      margin: 0;
+      max-width: 840px;
+      font-size: 25px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .cards {
+      align-self: end;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      min-height: 112px;
+      padding: 24px 26px;
+      border-radius: 24px;
+      border: 2px solid var(--border);
+      background: rgba(11, 21, 36, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .card strong {
+      font-size: 23px;
+      line-height: 1.15;
+    }
+
+    .card span {
+      font-size: 18px;
+      line-height: 1.3;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <section class="frame">
+    <div class="pill">SDD GUARDIAN</div>
+    <h1>Context that survives delivery.</h1>
+    <p class="deck">
+      Bootstrap and maintain PROJECT.md, STATE.md, modular docs, ADRs, and ops truth so Codex can
+      work on long-running systems without losing context or relying on giant prompts.
+    </p>
+    <div class="cards">
+      <article class="card">
+        <strong>Small global rule</strong>
+        <span>Short, durable, behavioral.</span>
+      </article>
+      <article class="card">
+        <strong>Modular repo truth</strong>
+        <span>Architecture, ops, domain, ADRs.</span>
+      </article>
+      <article class="card">
+        <strong>Ship code + docs</strong>
+        <span>Detect drift and update only what changed.</span>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
+

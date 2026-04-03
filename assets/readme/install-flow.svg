@@ -1,0 +1,61 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="1" stop-color="#12312F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="72" y="110" fill="#F8FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700">Install once. Sync everywhere.</text>
+
+  <g>
+    <rect x="72" y="182" width="248" height="370" rx="30" fill="#0A1421" stroke="#1C4F7B" stroke-width="3"/>
+    <rect x="392" y="182" width="248" height="370" rx="30" fill="#0A1421" stroke="#1C4F7B" stroke-width="3"/>
+    <rect x="712" y="182" width="248" height="370" rx="30" fill="#0A1421" stroke="#1C4F7B" stroke-width="3"/>
+    <rect x="1032" y="182" width="176" height="370" rx="30" fill="#0A1421" stroke="#1C4F7B" stroke-width="3"/>
+  </g>
+
+  <g fill="#168B7C">
+    <rect x="96" y="206" width="56" height="56" rx="20"/>
+    <rect x="416" y="206" width="56" height="56" rx="20"/>
+    <rect x="736" y="206" width="56" height="56" rx="20"/>
+    <rect x="1056" y="206" width="56" height="56" rx="20"/>
+  </g>
+  <g fill="#F8FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    <text x="116" y="244">1</text>
+    <text x="436" y="244">2</text>
+    <text x="756" y="244">3</text>
+    <text x="1076" y="244">4</text>
+  </g>
+
+  <g fill="#F8FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">
+    <text x="96" y="332">Clone repo</text>
+    <text x="416" y="332">Run install</text>
+    <text x="736" y="332">Codex updated</text>
+    <text x="1056" y="332">Next PC</text>
+  </g>
+
+  <g fill="#BED4E8" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <text x="96" y="390">git clone</text>
+    <text x="96" y="422">JuanDalvit1/sdd-guardian</text>
+
+    <text x="416" y="390">bootstrap\install.ps1</text>
+    <text x="416" y="430">Installs the skill and the</text>
+    <text x="416" y="458">managed AGENTS block.</text>
+
+    <text x="736" y="390">%USERPROFILE%\.codex</text>
+    <text x="736" y="430">Receives the skill folder</text>
+    <text x="736" y="458">and the persistent snippet.</text>
+
+    <text x="1056" y="390">git pull</text>
+    <text x="1056" y="422">bootstrap\sync.ps1</text>
+    <text x="1056" y="458">Reapply the setup.</text>
+  </g>
+
+  <path d="M322 366H370" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M354 350L392 366L354 382" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M642 366H690" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M674 350L712 366L674 382" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M962 366H1010" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M994 350L1032 366L994 382" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
